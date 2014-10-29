@@ -16,8 +16,8 @@ struct Robot_LED_Cmd {                    // Message_Type: 0x01
             byte TeamColor;               // 0x88 = Red, 0xFF = Blue.
             byte CodeStatus;              // 0x00 = Normal.
             byte ErrorCode;               // 0x00 = No Error.
-            byte LeftDriveTrainPercent;   // 0 = 0%  100 = 100% (Forward) 101 = -1%  200 = -100% (Reverse)
-            byte RightDriveTrainPercent;  // 0 = 0%  100 = 100% (Forward) 101 = -1%  200 = -100% (Reverse)
+            byte LeftDriveTrainPercent;   // 0x00 = 0%  0x80 = 100% (Forward) 0x8D = -10%  0xFF = -100% (Reverse)
+            byte RightDriveTrainPercent;  // 0x00 = 0%  0x80 = 100% (Forward) 0x8D = -10%  0xFF = -100% (Reverse)
 };
 
 typedef struct Robot_LED_Cmd rLedCmd;
