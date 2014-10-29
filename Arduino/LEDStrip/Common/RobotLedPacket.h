@@ -33,7 +33,7 @@ typedef struct Robot_LED_Resp rLedResp;
 struct Robot_LED_Announce {               // Message_Type: 0x03
             rHeader header;
             char TeamName[25];
-            byte TeamColor;               // 0x00 = Red, 0xFF = Blue.
+            byte TeamColor;               // 0x88 = Red, 0xFF = Blue.
 };
                         
 
